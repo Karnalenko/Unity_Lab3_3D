@@ -28,7 +28,7 @@ public class MovementPlayer : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (!capsuleCollider.isGrounded) return;
+            //if (!capsuleCollider.isGrounded) return;
             rbody.AddForce(Vector2.up * jumpHeight, ForceMode.Impulse);
         }
     }
